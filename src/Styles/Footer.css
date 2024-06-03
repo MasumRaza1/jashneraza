@@ -169,3 +169,45 @@
         margin: 16px 0 0;
     }
 }
+
+/* github  */
+.githubContainer {
+    text-align: center;
+    padding: 10px;
+    font-family: 'poppins';
+    color: #fff;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #343a40;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #795484;
+  }
+  
+  .footer-bottom {
+    margin-top: 14px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .footer-bottom a {
+    text-decoration: none;
+    color: #795484;
+    font-weight: 700;
+  }
+  
+  .footer-bottom a:hover {
+    color: #333;
+  }
+  

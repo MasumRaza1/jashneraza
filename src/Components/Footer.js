@@ -3,7 +3,8 @@ import "../Styles/Footer.css";
 import SubscribeNewsletter from "./SubscribeNewsletter";
 import { Link } from "react-router-dom";
 import logo from "../Assets/footerLogo.svg";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 function Footer() {
   const currentYear = new Date().getFullYear();
   return (
@@ -143,6 +144,11 @@ function Footer() {
             </a>
           </li>
         </ul>
+       
+      </div>
+      <div className="githubContainer">
+      <p>Give it a ⭐ on <a href="https://github.com/MasumRaza1/jashneraza"><button type="button" className="btn btn-dark"><FontAwesomeIcon icon={faGithub} /></button></a></p>
+      <p className="footer-bottom">Created with ❤️ by <a href="https://github.com/MasumRaza1/">Masum Raza</a></p>
       </div>
     </div>
   );
