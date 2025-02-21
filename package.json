@@ -50,8 +50,8 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "gh-pages": "^5.0.0",
-    "react-router-dom": "^6.14.2",
-    "cross-env": "^7.0.3"
+    "react-router-dom": "^6.14.2"
   }
 }
