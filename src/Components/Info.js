@@ -1,45 +1,64 @@
 import React from "react";
 import InformationCard from "./InformationCard";
-import { faBook, faTruckMedical, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHandHoldingMedical, faSchool, faBookOpen, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Info.css";
+import jashneraza from "../Assets/branches_logo/jashneraza.svg";
+import shifaeraza from "../Assets/branches_logo/shifaeraza.svg";
+import kalameraza from "../Assets/branches_logo/kalameraza.svg";
+import faizaneraza from "../Assets/branches_logo/faizaneraza.svg";
+
 
 function Info() {
   return (
     <div className="info-section" id="services">
       <div className="info-title-content">
-        <h3 className="info-title">
-          <span>What We Do</span>
-        </h3>
-        <p className="info-description">
-        At Jashn-e-Raza, we provide financial support to underprivileged individuals in Rehla, Jharkhand. Our focus is on covering basic needs such as medical expenses and educational fees to foster a brighter future for all members of our community.
-        </p>
+      <h3 className="info-title">
+  <span>Our Mission</span>
+</h3>
+<p className="info-description">
+  FR Society supports underprivileged individuals in Rehla, Jharkhand, covering medical and educational needs to build a brighter future.
+
+  <p style={{ fontSize: "1rem", fontStyle: "italic", color: "#795484", padding:"20px 0px 0px 0px", fontFamily: "'merriweather'"}}>  
+  Yā Ilāhī sard-e-mehrī par ho jab khurshīd-e-ḥashr, <br />
+Sayyad-e-besāyah ke zill-e-lawā kā sāth ho...
+</p>
+</p>
+
       </div>
 
       <div className="info-cards-content">
-        <InformationCard
-          title="Health Care"
-          description="Jashn-e-Raza stands as a beacon of healthcare support in Rehla, Jharkhand, 
-          offering financial assistance to ensure no one faces medical challenges alone. 
-          Through our efforts, we strive to create a healthier, 
-          more resilient community where everyone can access the care they need to thrive."
-          icon={faTruckMedical}
-        />
+      <InformationCard
+  title="Shifa-e-Raza"
+  description="Providing healthcare and social welfare support to ensure a healthier community for all."
+  icon={faHandHoldingMedical} 
+  branchLogo={shifaeraza}
+/>
 
-        <InformationCard
-          title="Education"
-          description="Education is the key to unlocking a brighter future, and at Jashn-e-Raza, 
-          we're committed to ensuring every child has access to quality education in Rehla, Jharkhand. 
-          By providing financial support for educational expenses, 
-          we empower young minds to reach their full potential and build a foundation for lifelong success."
-          icon={faBook}
-        />
+<InformationCard
+  title="Faizan-e-Raza"
+  description="Dedicated to Quranic education, making learning accessible to everyone."
+  icon={faSchool}
+  branchLogo={faizaneraza}
+/>
 
-        <InformationCard
-          title="Community Care"
-          description="At Jashn-e-Raza, we prioritize the well-being of our community in Rehla, Jharkhand, by offering financial support for essential needs like medical expenses and educational fees. Through collective care and support, we strive to uplift the underprivileged and foster a stronger, more resilient community for all."
-          icon={faHeart}
-        />
+<InformationCard
+  title="Kalam-e-Raza"
+  description="A vast collection of Ala Hazrat's e-books and literature, easily accessible to all."
+  icon={faBookOpen} // Represents literature & e-books
+  branchLogo={kalameraza}
+/>
+
+<InformationCard
+  title="Jashn-e-Raza"
+  description="Organizing events and celebrations that bring the community together."
+  icon={faCalendarAlt} // Represents events & celebrations
+  branchLogo={jashneraza}
+/>
+
+
       </div>
+
+      
     </div>
   );
 }

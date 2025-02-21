@@ -1,5 +1,5 @@
 import React from "react";
-import Aim from "../Assets/aim.svg";
+import Aim from "../Assets/aboutCollage.png";
 import SolutionStep from "./SolutionStep";
 import "../Styles/About.css";
 
@@ -11,33 +11,37 @@ function About() {
       </div>
 
       <div className="about-text-content">
-        <h3 className="about-title">
-          <span>About Us</span>
-        </h3>
-        <p className="about-description">
-         
-At Jashn-e-Raza, based in Rehla, Jharkhand, 
-we are dedicated to uplifting underprivileged 
-communities. Through financial support for basic 
-needs like healthcare and education, we aim to foster a brighter future for all. 
-        </p>
+      <h3 className="about-title">
+  <span>Who We Are</span>
+</h3>
 
-        <h4 className="about-text-title">Our Initiatives</h4>
+<p className="about-description">
+  FR Society, based in Rehla, Jharkhand, is dedicated to uplifting underprivileged communities.  
+  We provide financial aid for healthcare and education, paving the way for a brighter, more hopeful future. 
 
-        <SolutionStep
-          title="Empowering Tomorrow"
-          description="Through educational scholarships and skill-building workshops, we empower the youth of Rehla, Jharkhand, to unlock their full potential and shape a brighter future."
-        />
+  <p style={{ fontSize: "1rem", fontStyle: "italic", color: "#795484", padding:"20px 0px 0px 0px", fontFamily: "'merriweather'"}}>  
+  Kaun detā hai dene ko muñh chāhiye <br />
+Dene vālā hai sachchā hamārā Nabī ...
+</p>
+</p>
 
-        <SolutionStep
-          title="Healthcare Access"
-          description="By providing financial assistance for medical expenses, we ensure that individuals in Rehla have access to essential healthcare services when they need them most."
-        />
+<h4 className="about-text-title">Our Mission</h4>
 
-        <SolutionStep
-          title="Community Development"
-          description="Through various community outreach programs, we foster unity and resilience, creating a supportive environment where everyone can thrive and prosper."
-        />
+<SolutionStep
+  title="Education for Growth"
+  description="We support learning initiatives, making knowledge and resources accessible to all."
+/>
+
+<SolutionStep
+  title="Healthcare for All"
+  description="By covering medical expenses, we ensure individuals receive the care they need, when they need it most."
+/>
+
+<SolutionStep
+  title="Community Welfare"
+  description="Through social welfare programs and events, we foster unity, support, and positive change."
+/>
+
       </div>
     </div>
   );

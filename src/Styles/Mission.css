@@ -1,0 +1,170 @@
+/* General Styling */
+.ourmissions-section {
+    background: #fff;
+    padding: 20px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.ourmissions-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* Title & Description */
+.ourmissions-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.ourmissions-title > span {
+    position: relative;
+    display: inline-block;
+}
+
+.ourmissions-title span::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 4px;
+    background-color: #795484;
+    border-radius: 8px;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.ourmissions-title:hover span::before {
+    width: 100%;
+}
+
+
+
+.ourmissions-description {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    color: #555;
+    max-width: 700px;
+    margin-top: 20px !important;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* Grid Layout */
+.ourmissions-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 20px;
+    justify-content: center;
+}
+
+/* mission Cards (Smaller & Centered) */
+.mission-card {
+    width: 250px; 
+    padding: 30px 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center everything inside */
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Icons */
+.mission-icon {
+    font-size: 30px; 
+    color: #795484;
+    margin-bottom: 12px;
+    opacity:0.8;
+}
+
+/* mission Title */
+.mission-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 8px;
+    color: inherit;
+}
+
+/* mission Description */
+.mission-description {
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    color: #555;
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* Card Logo (Bigger & Centered) */
+.info-card-image {
+    margin-top: 12px;
+    width: 150px; /* Bigger images */
+    height: auto;
+    opacity: 1;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .ourmissions-title {
+        font-size: 32px;
+    }
+    
+    .ourmissions-description {
+        font-size: 14px;
+    }
+    
+    .mission-card {
+        width: 500px; 
+        height: auto;
+        padding: 25px 12px;
+    }
+
+    .mission-title {
+        font-size: 17px;
+    }
+
+    .mission-description {
+        font-size: 18px;
+    }
+
+    .info-card-image {
+        width: 100px; /* Slightly smaller images */
+    }
+}
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    .ourmissions-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ourmissions-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row on mobile */
+    }
+
+    .mission-card {
+        width: 100%; /* Make cards take up more space */
+    }
+}

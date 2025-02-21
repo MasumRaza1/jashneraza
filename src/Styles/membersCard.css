@@ -1,0 +1,179 @@
+/* Doctor Section */
+body{
+	 background: #F8F8F8;
+}
+.doctor-section {
+    padding: 48px 5%;
+    margin-bottom: 48px;
+    text-align: center;
+    background: #F8F8F8;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Title Content */
+.dt-title-content {
+    margin-bottom: 64px;
+}
+
+.dt-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.dt-title > span {
+    position: relative;
+    display: inline-block;
+}
+
+.dt-title span::before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    background-color: #795484;
+    border-radius: 8px;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Description */
+.dt-description {
+    margin: 24px auto 0;
+    max-width: 800px;
+    text-align: center;
+    color: #4d4b4b;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    line-height: 1.8rem;
+    letter-spacing: 0.6px;
+    opacity: 0.9;
+}
+
+/* Doctor Cards */
+.dt-cards-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+/* Individual Card */
+.dt-card {
+    width: 340px;
+    height: 420px;
+    padding: 16px;
+    background: white;
+    border-radius: 16px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dt-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Image */
+.dt-card-img {
+    width: 100%;
+    height: 275px;
+    background-color: #DDE5F8;
+    border-radius: 16px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Card Text */
+.dt-card-name {
+    margin-top: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    color: #222;
+}
+
+.dt-card-title {
+    margin: 6px 0 8px;
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+}
+
+/* Stars & Reviews */
+.dt-card-stars {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    color: #ff9800;
+}
+
+.dt-card-reviews {
+    color: #5a5a5a;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .dt-title {
+        font-size: 34px;
+    }
+    .dt-description {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .doctor-section {
+        padding: 32px;
+    }
+    .dt-title {
+        font-size: 30px;
+    }
+    .dt-description {
+        font-size: 16px;
+    }
+    .dt-card {
+        width: 100%;
+    }
+}
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #795484, #5A3C66);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(121, 84, 132, 0.3);
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #5A3C66, #3E2847);
+    box-shadow: 0 8px 20px rgba(90, 60, 102, 0.4);
+    transform: translateY(-2px);
+}
+
+.download-btn:active {
+    transform: scale(0.95);
+}

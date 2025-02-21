@@ -8,7 +8,7 @@ import {
 import "../Styles/Navbar.css";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import logo from "../Assets/jashneraza_logo.svg";
+import logo from "../Assets/FR Society (250 x 75 px) (1).svg";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -60,9 +60,11 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#volunteers" className="navbar-links">
-            Volunteers
-          </a>
+          
+          <Link to="/members" className="navbar-links">
+            Members
+          </Link>
+  
         </li>
       </ul>
 
@@ -103,9 +105,9 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a onClick={openNav} href="#volunteers">
-            Volunteers
-            </a>
+            <Link onClick={openNav} to="/members">
+              Members
+            </Link>
           </li>
           <li>
             <a onClick={openNav} href="#contact">

@@ -9,6 +9,8 @@ function InformationCard(props) {
       </span>
       <p className="info-card-title">{props.title}</p>
       <p className="info-card-description">{props.description}</p>
+      <img className="info-card-image" src={props.branchLogo} alt={props.title} />
+
     </div>
   );
 }

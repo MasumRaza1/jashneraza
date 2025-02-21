@@ -22,25 +22,30 @@ function BookAppointment() {
       </div>
 
       <div className="ba-text-content">
-        <h3 className="ba-title">
-          <span>Why Choose Jashn-e-Raza</span>
-        </h3>
-        <p className="ba-description">
-        Jashn-e-Raza stands out as a beacon of hope and compassion in our community. Here are a few reasons why choosing Jashn-e-Raza means choosing to make a real difference:
-        </p>
+      <h3 className="ba-title">
+  <span>Why Choose FR Society?</span>
+</h3>
+<p className="ba-description">
+  Committed to education, healthcare, and social welfare, FR Society strives to create lasting change. Be a part of the impact.
 
-        <p className="ba-checks ba-check-first">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#795484" }} /> Dedication to Service
-        </p>
-        <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#795484" }} /> Impactful Initiatives
-        </p>
-        <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#795484" }} /> Transparency and Accountability
-        </p>
-        <p className="ba-checks ba-check-last">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#795484" }} /> Community Engagement
-        </p>
+  <p style={{ fontSize: "1rem", fontStyle: "italic", color: "#795484", padding:"20px 0px 0px 0px", fontFamily: "'merriweather'"}}>  
+  Jalvā hai Nūr hai ke sarāpā Razā kā hai, <br />
+  Tasvīr-e-Sunnīyat hai ke chehrā Razā kā hai...
+</p>
+</p>
+
+<p className="ba-checks ba-check-first">
+  <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#795484" }} /> Compassionate Service
+</p>
+<p className="ba-checks">
+  <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#795484" }} /> Meaningful Impact
+</p>
+<p className="ba-checks">
+  <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#795484" }} /> Transparency & Trust
+</p>
+<p className="ba-checks ba-check-last">
+  <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#795484" }} /> Strong Community Support
+</p>
 
         <button
           className="text-appointment-btn"

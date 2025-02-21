@@ -2,9 +2,9 @@ import React from "react";
 import "../Styles/Footer.css";
 import SubscribeNewsletter from "./SubscribeNewsletter";
 import { Link } from "react-router-dom";
-import logo from "../Assets/footerLogo.svg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+// import logo from "../Assets/footerLogo.svg";
 function Footer() {
   const currentYear = new Date().getFullYear();
   return (
@@ -13,10 +13,11 @@ function Footer() {
         <div className="ft-info">
           <div className="ft-info-p1">
             <p className="ft-title">
-            <img src={logo} alt="Jashneraza Logo" />
+            {/* <img src={logo} alt="Jashneraza Logo" /> */}
+            FR Society
             </p>
             <p className="ft-description">
-            Jashn-e-Raza, a non-profit in Rehla, Jharkhand, is dedicated to uplifting underprivileged communities.
+            FR Society, a non-profit in Rehla, Jharkhand, is dedicated to uplifting underprivileged communities.
             </p>
           </div>
 
@@ -24,22 +25,19 @@ function Footer() {
         </div>
 
         <div className="ft-list">
-  <p className="ft-list-title">Services</p>
+  <p className="ft-list-title">Our Initiatives</p>
   <ul className="ft-list-items">
     <li>
-      <a href="#services">Financial Support</a>
+      <a href="#services">Faizan-e-Raza (Education & Learning)</a>
     </li>
     <li>
-      <a href="#services">Educational Assistance</a>
+      <a href="#services">Kalam-e-Raza (E-books & Literature)</a>
     </li>
     <li>
-      <a href="#services">Medical Aid</a>
+      <a href="#services">Shifa-e-Raza (Healthcare & Welfare)</a>
     </li>
     <li>
-      <a href="#services">Community Outreach</a>
-    </li>
-    <li>
-      <a href="#services">Volunteer Programs</a>
+      <a href="#services">Jashn-e-Raza (Events & Celebrations)</a>
     </li>
   </ul>
 </div>
@@ -58,38 +56,36 @@ function Footer() {
             <li>
               <Link to={"/legal"}>Terms of Services</Link>
             </li>
-            <li>
-              <Link to={"/legal"}>Consultations</Link>
-            </li>
-            <li>
-              <Link to={"/legal"}>How it Works</Link>
-            </li>
           </ul>
         </div>
 
         <div className="ft-list" id="contact">
-          <p className="ft-list-title">Talk To Us</p>
+          <p className="ft-list-title">Contact Us</p>
           <ul className="ft-list-items">
             <li>
-              <a href="mailto:support@healthplus.com">support@jashneraza.org</a>
+              <a href="mailto:support@healthplus.com">support@frsociety.in</a>
             </li>
             <li>
-              <a href="mailto:appointment@healthplus.com">
-                info@jashneraza.org
+              <a href="mailto:frsociety786@gmail.com">
+              frsociety786@gmail.com
               </a>
             </li>
             <li>
               <a href="tel:+022 5454 5252">+022 5454 5252</a>
             </li>
             <li>
-              <a href="tel:+022 2326 6232">+022 2326 6232</a>
-            </li>
+            <a href="#">
+    <FontAwesomeIcon icon={faLocationDot} style={{ marginRight: "8px", color: "#a5a7ac" }} />
+    Dandila Kalan, Rehla <br /> Palamu, Jharkhand
+  </a>
+  </li>
+
           </ul>
         </div>
       </div>
 
       <div className="ft-copyright">
-      <p>© 2021-{currentYear} Jashn-e-Raza. All rights reserved.</p>
+      <p>© 2021-{currentYear} FR Society. All rights reserved.</p>
 
         <ul className="ft-social-links">
         <li>
@@ -146,10 +142,7 @@ function Footer() {
         </ul>
        
       </div>
-      <div className="githubContainer">
-      <p>Give it a ⭐ on <a href="https://github.com/MasumRaza1/jashneraza"><button type="button" className="btn btn-dark"><FontAwesomeIcon icon={faGithub} /></button></a></p>
-      <p className="footer-bottom">Created with ❤️ by <a href="https://github.com/MasumRaza1/">Masum Raza</a></p>
-      </div>
+      
     </div>
   );
 }

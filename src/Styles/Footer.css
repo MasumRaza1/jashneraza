@@ -110,9 +110,12 @@
     align-items: center;
     color: #cbcdd3;
     font-family: 'Rubik', sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bold;
     letter-spacing: .8px;
+}
+.ft-copyright p{
+    font-size: 0.6rem;
 }
 .ft-social-links {
     list-style-type: none;

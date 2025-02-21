@@ -23,7 +23,7 @@
 }
 .text-title {
     width: 500px;
-    color: black;
+    color: #222;
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: bold;
@@ -151,3 +151,4 @@
         right: 32px;
     }
 }
+

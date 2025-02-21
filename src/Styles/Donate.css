@@ -1,0 +1,187 @@
+/* Container */
+.donate-container {
+ 
+    margin: auto;
+    padding: 60px 30px;
+    text-align: center;
+    background: #f9f9f9;
+ 
+}
+
+/* Title & Description */
+.donate-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.donate-title > span {
+    position: relative;
+    display: inline-block;
+}
+
+.donate-title span::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 4px;
+    background-color: #795484;
+    border-radius: 8px;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.donate-title:hover span::before {
+    width: 100%;
+}
+.donate-description {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px !important;
+}
+
+/* Content Layout */
+.donate-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Bank Details Section */
+.donate-details {
+    width: 48%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donate-details h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.detail-card {
+    background: white;
+    padding: 25px;
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.detail-card p {
+    margin: 12px 0;
+    font-weight: 500;
+}
+
+/* QR Code Section */
+.donate-qr {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donate-qr h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* QR Code Box */
+.qr-card {
+    background: white;
+    padding: 24px;
+    width: 230px;
+    height: 230px;
+    border-radius: 16px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qr-card:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.qr-image {
+    width: 190px;
+    height: 190px;
+    object-fit: contain;
+}
+
+/* Donate Button */
+.donate-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 14px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #795484, #6a3f70);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.donate-button:hover {
+    background: linear-gradient(135deg, #6a3f70, #54345d);
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .donate-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .donate-details, .donate-qr {
+        width: 100%;
+    }
+
+    .qr-card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .qr-image {
+        width: 270px;
+        height: 270px;
+    }
+}

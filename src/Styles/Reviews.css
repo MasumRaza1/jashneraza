@@ -1,126 +1,140 @@
 .review-section {
-    padding: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
-    background: linear-gradient(to right, #ECF2FF, #FBFCFF);
+    padding: 40px 20px;
+    background: linear-gradient(to right, #f6f8fc, #ffffff);
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 50px;
 }
+
 /* Text */
 .rw-text-content {
-    width: 100%;
+    max-width: 700px;
+    text-align: center;
 }
+
 .rw-text-title {
-    margin: 16px 0;
-    color: #6F7074;
-    font-family: 'Rubik', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: .7px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-bottom: 10px;
 }
+
 .rw-text-num {
     color: #795484;
+    font-weight: 700;
 }
+
 .rw-text-desc {
-    margin: 16px 0;
-    color: black;
-    font-family: 'Rubik', sans-serif;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
-    letter-spacing: .7px;
-    line-height: 2.6rem;
+    color: #222;
+    margin-bottom: 20px;
 }
+
 .rw-text-format {
-    margin: 64px 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     position: relative;
-}
-.rw-text-quote1 {
-    position: absolute;
-    top: -18px;
-    left: -24px;
-    color: #795484;
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-.rw-text-quote2 {
-    position: absolute;
-    right: -18px;
-    bottom: -24px;
-    color: #795484;
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-.rw-review {
-    display: block;
-    margin: 0 0 0 8px;
-    color: black;
-    font-family: 'Rubik', sans-serif;
-    font-size: 24px;
-    letter-spacing: .7px;
-    line-height: 2.2rem;
-}
-.rw-authors {
-    margin: 0 0 0 8px;
+    font-size: 20px;
+    line-height: 1.6;
+    padding: 20px;
+    background: #f3effb;
+    border-radius: 10px;
+    font-style: italic;
+    transition: opacity 0.4s ease-in-out;
+    
+    /* Fixed height for consistent layout */
+    height: 150px; /* Adjust based on longest review */
+    max-width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Ensure the text doesn't overflow */
+.rw-review {
+    max-height: 120px; /* Adjust to fit inside rw-text-format */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; /* Allows wrapping */
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Limits to 4 lines */
+    -webkit-box-orient: vertical;
+}
+
+
+.rw-text-quote1, .rw-text-quote2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #795484;
+    position: absolute;
+}
+
+.rw-text-quote1 {
+    top: -10px;
+    left: -7px;
+}
+
+.rw-text-quote2 {
+    bottom: -10px;
+    right: -2px;
+}
+/* Author */
+.rw-authors {
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
+
 .rw-reviewer-name {
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: .8px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
 }
+
 .rw-reviewer-place {
-    margin: 6px 0 0 0;
-    color: #6F7074;
-    font-family: 'Rubik', sans-serif;
     font-size: 18px;
-    font-weight: bold;
-    letter-spacing: .8px;
+    color: #6f7074;
 }
+
 /* Buttons */
-.rw-next-btn {
-    margin: 0 24px 0 0;
-    color: black;
-    border: 1px solid transparent;
-    background-color: transparent;
-    outline: transparent;
-    font-size: 48px;
+.rw-nav-btn {
+    font-size: 32px;
+    background: none;
+    border: none;
     cursor: pointer;
-}
-.rw-next-btn:hover {
     color: #795484;
+    transition: transform 0.2s ease-in-out;
 }
+
+.rw-nav-btn:hover {
+    transform: scale(1.2);
+}
+
 /* Responsive */
-@media screen and (max-width: 700px) {
-    .review-section {
-        letter-spacing: .8px;
-    }
+@media (max-width: 768px) {
     .rw-text-title {
-        font-size: 22px;
+        font-size: 24px;
+    }
+    .rw-review {
+        font-size: 18px;
+        line-height: 1.6rem;
+        letter-spacing: 1.2px;
+        -webkit-line-clamp: 3; /* Keep it readable without squishing */
     }
     .rw-text-desc {
         font-size: 28px;
     }
-    .rw-review {
-        font-size: 22px;
-        letter-spacing: .7px;
-        line-height: 1.8rem;
+    .rw-text-format {
+        font-size: 18px;
     }
     .rw-reviewer-name {
         font-size: 20px;
     }
-    .rw-next-btn {
-        margin: 0 16px 0 0;
-        font-size: 40px;
+    .rw-nav-btn {
+        font-size: 28px;
     }
 }

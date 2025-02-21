@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Doctor from "../Assets/hero-image.jpg";
+import HeroImage from "../Assets/hero-image.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandsHelping , faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate  } from "react-router-dom";
@@ -14,8 +14,8 @@ function Hero() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const handleBookAppointmentClick = () => {
-    navigate("/appointment");
+  const handleVolunteerRegistrationClick = () => {
+    navigate("/volunteer-registration");
   };
 
   useEffect(() => {
@@ -37,18 +37,24 @@ function Hero() {
     <div className="section-container">
       <div className="hero-section">
         <div className="text-section">
-          <p className="text-headline">❤️ Uplifting Lives Together</p>
+          <p className="text-headline">❤️ Every Moment, With You</p>
           <h2 className="text-title">
-          Empowering Communities, Building Futures
+          Empowering Communities
           </h2>
           <p className="text-descritpion">
-          Jashn-e-Raza, a non-profit in Rehla, Jharkhand, is dedicated to uplifting underprivileged communities.
-          We offer financial support for basic needs, including medical expenses and education fees, to foster a brighter future for all.
+          FR Society, a non-profit in Rehla, Jharkhand, empowers underprivileged communities by providing medical and educational support for a brighter future.
+          </p>
+          <p className="text-descritpion">
+          <p style={{ fontSize: "1rem", fontStyle: "italic", color: "#333", padding:"20px 0px 0px 0px", fontFamily: "'merriweather'"}}> 
+  Mehre Charkhe Nubuwwat pe Roshān Durūd <br />  
+  Ghul-e-Bāgh-e-Risālat pe Lākhōñ Salām...  
+</p>
+
           </p>
           <button
             className="text-appointment-btn"
             type="button"
-            onClick={handleBookAppointmentClick}
+            onClick={handleVolunteerRegistrationClick}
           >
             <FontAwesomeIcon icon={faHandsHelping}  /> Become Volunteer
           </button>
@@ -71,7 +77,7 @@ function Hero() {
         </div>
 
         <div className="hero-image-section">
-          <img className="hero-image1" src={Doctor} alt="Doctor" />
+          <img className="hero-image1" src={HeroImage} alt="Hero Image" />
         </div>
       </div>
 

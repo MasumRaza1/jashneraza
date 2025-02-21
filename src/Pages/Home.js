@@ -5,19 +5,27 @@ import Info from "../Components/Info";
 import About from "../Components/About";
 import BookAppointment from "../Components/BookAppointment";
 import Reviews from "../Components/Reviews";
+import Events from "../Components/Events";
+import Mission from "../Components/Mission";
+import OurWorks2 from "../Components/OurWorks2";
+import Donate from "../Components/Donate";
 import Footer from "../Components/Footer";
-import Volunteers from "../Components/Volunteers";
+
 
 function Home() {
   return (
     <div className="home-section">
       <Navbar />
       <Hero />
-      <Info />
+      <Mission />
+      {/* <Info /> */}
       <About />
       <BookAppointment />
+      {/* <Events /> */}
+      <OurWorks2 />
+      <Donate />
       <Reviews />
-      <Volunteers />
+     
       <Footer />
     </div>
   );
