@@ -37,24 +37,65 @@
     letter-spacing: .7px;
     line-height: 1.6rem;
 }
-.text-appointment-btn {
-    padding: 14px 20px;
+.button-container {
+    display: flex;
+    gap: 16px; /* Adjust space between buttons */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    justify-content: center; /* Centering buttons */
+}
+
+.text-donate-btn {
+    padding: 16px 24px;
     color: white;
-    border: 1px solid transparent;
-    border-radius: 28px;
-    outline: transparent;
-    background-color: #795484;
-    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #795484, #a375a3);
+    font-size: 20px;
+    font-weight: bold;
     font-family: 'Rubik', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(121, 84, 132, 0.3);
+}
+
+.text-registration-btn:hover {
+    background: linear-gradient(135deg, #a375a3, #795484);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(121, 84, 132, 0.4);
+}
+
+.text-registration-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(121, 84, 132, 0.2);
+}
+
+
+.outlined {
+    color: #795484;
+    background-color: transparent;
+    border: 1.5px solid #795484;
+    padding: 14px 20px;
+    border-radius: 28px;
+    font-size: 18px;
     letter-spacing: .8px;
     cursor: pointer;
     transition: all .4s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
-.text-appointment-btn:hover {
-    color: #795484;
-    background-color: transparent;
-    border: 1px solid #795484;
+
+.outlined:hover {
+    color: #fff;
+    background-color: #795484;
+    border: 1px solid transparent;
 }
+
+
 .text-stats {
     margin-top: 40px;
     display: flex;
@@ -134,7 +175,7 @@
     .text-descritpion {
         font-size: 16px;
     }
-    .text-appointment-btn {
+    .text-registration-btn {
         font-size: 16px;
     }
     .text-stats {

@@ -11,7 +11,7 @@ function SubscribeNewsletter() {
     setInputEmail(event.target.value);
   };
 
-  const handleBookAppointmentClick = () => {
+  const handleVolunteerRegisterClick = () => {
     if (!isButtonDisabled) {
       emailRegex.test(inputEmail)
         ? toast.success("Subscribed to Newsletter !", {
@@ -44,10 +44,10 @@ function SubscribeNewsletter() {
         autoComplete="true"
       />
       <button
-        className="text-appointment-btn"
+        className="text-newsletter-btn"
         type="button"
         disabled={isButtonDisabled}
-        onClick={handleBookAppointmentClick}
+        onClick={handleVolunteerRegisterClick}
       >
         Subscribe
       </button>

@@ -213,4 +213,24 @@
   .footer-bottom a:hover {
     color: #333;
   }
-  
+  .text-newsletter-btn {
+    padding: 14px 24px;
+    color: white;
+    background-color: #795484;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Rubik', sans-serif;
+}
+
+.text-newsletter-btn:hover {
+    background-color: #a375a3;
+}
+
+.text-newsletter-btn:active {
+    transform: scale(0.98);
+}

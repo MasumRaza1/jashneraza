@@ -16,8 +16,6 @@ import logo from "../Assets/FR Society (250 x 75 px) (1).svg";
 
 
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/membersCard.css";
 
 function Volunteer() {
