@@ -45,8 +45,8 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <a href="#services" className="navbar-links">
-            Services
+          <a href="#mission" className="navbar-links">
+            Mission
           </a>
         </li>
         <li>
@@ -57,6 +57,11 @@ function Navbar() {
         <li>
           <a href="#reviews" className="navbar-links">
             Reviews
+          </a>
+        </li>
+        <li>
+          <a href="#donate" className="navbar-links">
+            Donate
           </a>
         </li>
         <li>
@@ -90,13 +95,18 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <a onClick={openNav} href="#services">
-              Services
+            <a onClick={openNav} href="#mission">
+              Mission
             </a>
           </li>
           <li>
             <a onClick={openNav} href="#about">
               About
+            </a>
+          </li>
+          <li>
+            <a onClick={openNav} href="#donate">
+              Donate
             </a>
           </li>
           <li>
@@ -110,7 +120,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <a onClick={openNav} href="#contact">
+            <a onClick={openNav} href="#footer">
               Contact
             </a>
           </li>

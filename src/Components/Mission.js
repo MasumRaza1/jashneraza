@@ -43,7 +43,7 @@ const Ourmissions = () => {
     ];
 
     return (
-        <section className="ourmissions-section">
+        <section className="ourmissions-section" id="mission">
             <div className="ourmissions-container">
                 <h2 className="ourmissions-title"><span>Our Mission</span></h2>
                 <p className="ourmissions-description">

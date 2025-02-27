@@ -6,19 +6,19 @@ import {
   faHandsHelping,
 } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate  } from "react-router-dom";
-import "../Styles/BookAppointment.css";
+import "../Styles/ChooseFrsociety.css";
 
-function BookAppointment() {
+function ChooseFrsociety() {
   const navigate = useNavigate();
 
-  const handleBookAppointmentClick = () => {
-    navigate("/appointment");
+  const handleChooseFrsocietyClick = () => {
+    navigate("/volunteer-registration");
   };
 
   return (
     <div className="ba-section">
       <div className="ba-image-content">
-        <img src={News} alt="Doctor Group" className="ba-image1" />
+        <img src={News} alt="FR Sociey Newspapper" className="ba-image1" />
       </div>
 
       <div className="ba-text-content">
@@ -50,7 +50,7 @@ function BookAppointment() {
         <button
           className="text-appointment-btn"
           type="button"
-          onClick={handleBookAppointmentClick}
+          onClick={handleChooseFrsocietyClick}
         >
           <FontAwesomeIcon icon={faHandsHelping}  /> Become Volunteer
         </button>
@@ -59,4 +59,4 @@ function BookAppointment() {
   );
 }
 
-export default BookAppointment;
+export default ChooseFrsociety;

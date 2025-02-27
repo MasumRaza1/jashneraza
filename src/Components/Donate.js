@@ -4,7 +4,7 @@ import qrCode from "../Assets/qrcode_www.codewithfaraz.com.png"; // Ensure the p
 
 function Donate() {
   return (
-    <div className="donate-container">
+    <div className="donate-container" id="donate">
       <h2 className="donate-title">
         <span>Support FR Society</span>
       </h2>
@@ -32,16 +32,16 @@ function Donate() {
           <h3>Bank Transfer</h3>
           <div className="detail-card">
             <p>
-              <strong>Account Name:</strong> FR Society
+              <strong>Account Name:</strong> FR SOCIETY
             </p>
             <p>
-              <strong>Account Number:</strong> 1234567890
+              <strong>Account Number:</strong> 50200067073317
             </p>
             <p>
               <strong>Bank Name:</strong> HDFC
             </p>
             <p>
-              <strong>IFSC Code:</strong> ABCD0123456
+              <strong>IFSC Code:</strong> HDFC0002699
             </p>
             <p>
               <strong>Account Type:</strong> Current
@@ -60,7 +60,7 @@ function Donate() {
 
       {/* Donate Button */}
       <div className="donate-button-container">
-      <a href="https://rzp.io/rzp/Tm0hAxO" target="_blank" rel="noopener noreferrer">
+      <a href="https://rzp.io/rzp/Tm0hAxO" target="" rel="noopener noreferrer">
         <button className="donate-button">Donate Online</button>
       </a>
       </div>

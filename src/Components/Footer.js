@@ -28,16 +28,16 @@ function Footer() {
   <p className="ft-list-title">Our Initiatives</p>
   <ul className="ft-list-items">
     <li>
-      <a href="#services">Faizan-e-Raza (Education & Learning)</a>
+      <a href="#mission">Faizan-e-Raza (Education & Learning)</a>
     </li>
     <li>
-      <a href="#services">Kalam-e-Raza (E-books & Literature)</a>
+      <a href="#mission">Kalam-e-Raza (E-books & Literature)</a>
     </li>
     <li>
-      <a href="#services">Shifa-e-Raza (Healthcare & Welfare)</a>
+      <a href="#mission">Shifa-e-Raza (Healthcare & Welfare)</a>
     </li>
     <li>
-      <a href="#services">Jashn-e-Raza (Events & Celebrations)</a>
+      <a href="#mission">Jashn-e-Raza (Events & Celebrations)</a>
     </li>
   </ul>
 </div>
@@ -71,7 +71,7 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="tel:+022 5454 5252">+022 5454 5252</a>
+              <a href="tel:+022 5454 5252">+91 9006978778</a>
             </li>
             <li>
             <a href="#">
@@ -85,7 +85,7 @@ function Footer() {
       </div>
 
       <div className="ft-copyright">
-      <p>© 2021-{currentYear} FR Society. All rights reserved.</p>
+      <p>© 2021-{currentYear} FR Society. All rights reserved. </p>
 
         <ul className="ft-social-links">
         <li>

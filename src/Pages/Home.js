@@ -3,7 +3,7 @@ import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
 import Info from "../Components/Info";
 import About from "../Components/About";
-import BookAppointment from "../Components/BookAppointment";
+import ChooseFrsociety from "../Components/ChooseFrsociety";
 import Reviews from "../Components/Reviews";
 import Events from "../Components/Events";
 import Mission from "../Components/Mission";
@@ -20,7 +20,7 @@ function Home() {
       <Mission />
       {/* <Info /> */}
       <About />
-      <BookAppointment />
+      <ChooseFrsociety />
       {/* <Events /> */}
       <OurWorks2 />
       <Donate />
