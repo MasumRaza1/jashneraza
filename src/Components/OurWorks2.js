@@ -5,15 +5,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Styles/ourWorks2.css"; // Assuming this still applies to your styles
 
-// Use public folder paths directly
 const worksData = [
-  { image: "/works_img/work6.jpg", title: "Notable Guests Attended", description: "Various personalities joined FR Society’s COVID-19 relief efforts." },
-  { video: "/works_img/video.mp4", title: "Glimpses of Helping", description: "FR Society provided crucial aid to migrants during COVID-19." },
-  { image: "/works_img/work5.jpg", title: "Relief for Migrant Laborers", description: "FR Society provided crucial aid to migrants during COVID-19." },
-  { image: "/works_img/work4.jpg", title: "Helping Migrant Workers", description: "FR Society distributed food, water, and essentials during COVID-19." },
-  { image: "/works_img/work7.jpg", title: "Felicitation Ceremony", description: "FR Society honored volunteers & members with certificates and IDs." },
-  { image: "/works_img/fr_news.png", title: "Featured in Newspaper", description: "FR Society Featured in Newspaper" },
+  { image: `${process.env.PUBLIC_URL}/works_img/work6.jpg`, title: "Notable Guests Attended", description: "Various personalities joined FR Society’s COVID-19 relief efforts." },
+  { video: `${process.env.PUBLIC_URL}/works_img/video.mp4`, title: "Glimpses of Helping", description: "FR Society provided crucial aid to migrants during COVID-19." },
+  { image: `${process.env.PUBLIC_URL}/works_img/work5.jpg`, title: "Relief for Migrant Laborers", description: "FR Society provided crucial aid to migrants during COVID-19." },
+  { image: `${process.env.PUBLIC_URL}/works_img/work4.jpg`, title: "Helping Migrant Workers", description: "FR Society distributed food, water, and essentials during COVID-19." },
+  { image: `${process.env.PUBLIC_URL}/works_img/work7.jpg`, title: "Felicitation Ceremony", description: "FR Society honored volunteers & members with certificates and IDs." },
+  { image: `${process.env.PUBLIC_URL}/works_img/fr_news.png`, title: "Featured in Newspaper", description: "FR Society Featured in Newspaper" },
 ];
+
 
 const CustomPrevArrow = ({ onClick }) => <button className="custom-arrow custom-prev" onClick={onClick}>‹</button>;
 const CustomNextArrow = ({ onClick }) => <button className="custom-arrow custom-next" onClick={onClick}>›</button>;
