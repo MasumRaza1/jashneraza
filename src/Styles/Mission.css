@@ -168,3 +168,14 @@
         width: 100%; /* Make cards take up more space */
     }
 }
+.quote {
+    font-size: 1rem;
+    font-style: italic;
+    color: #795484;
+    padding: 20px 0px 30px 0px;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
+    display: block;
+  }
+  
+  

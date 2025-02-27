@@ -45,7 +45,7 @@ function Hero() {
           FR Society, a non-profit in Rehla, Jharkhand, empowers underprivileged communities by providing medical and educational support for a brighter future.
           </p>
           <p className="text-descritpion">
-          <p style={{ fontSize: "1rem", fontStyle: "italic", color: "#333", padding:"20px 0px 0px 0px", fontFamily: "'merriweather'"}}> 
+          <p style={{ fontSize: "1rem", fontStyle: "italic", color: "#333", padding:"40px 0px 0px 0px", fontFamily: "'merriweather'"}}> 
   Mehre Charkhe Nubuwwat pe Roshān Durūd <br />  
   Ghul-e-Bāgh-e-Risālat pe Lākhōñ Salām...  
 </p>

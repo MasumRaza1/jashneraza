@@ -43,33 +43,7 @@ function Volunteer() {
     { img: profile6, name: "Mr. Jamshed Alam", title: "Volunteer", stars: "4.8", reviews: "0" },
   ];
 
-  const handleDownload = async (id) => {
-    const cardElement = document.getElementById(id);
-    if (!cardElement) return;
-  
-    // Ensure fonts are loaded
-    await document.fonts.ready;
-  
-    // Temporarily hide the button to avoid capturing it
-    const button = cardElement.querySelector(".download-btn");
-    button.style.visibility = "hidden";
-  
-    // Fix background & resolution
-    const canvas = await html2canvas(cardElement, {
-      backgroundColor: "#ffffff",
-      scale: 2, // Higher resolution
-      useCORS: true,
-    });
-  
-    // Restore button visibility
-    button.style.visibility = "visible";
-  
-    // Save image
-    const link = document.createElement("a");
-    link.href = canvas.toDataURL("image/jpeg");
-    link.download = `${id}.jpg`;
-    link.click();
-  };
+ 
  
   
   
@@ -89,9 +63,7 @@ function Volunteer() {
         {members.map((member, index) => (
           <div key={index} id={`card-${index}`} className="doctor-card-container">
             <VolunteerCard {...member} />
-            <button className="download-btn" onClick={() => handleDownload(`card-${index}`)}>
-  Download JPG
-    </button>
+        
 
           </div>
         ))}

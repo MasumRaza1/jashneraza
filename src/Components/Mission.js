@@ -51,10 +51,11 @@ const Ourmissions = () => {
                 </p>
                
   
-                <p style={{ fontSize: "1rem", fontStyle: "italic", color: "#795484", padding:"20px 0px 30px 0px", fontFamily: "'merriweather'", letterSpacing:1}}>  
+                <p className="quote">
   Yā Ilāhī sard-e-mehrī par ho jab khurshīd-e-ḥashr, <br />
-Sayyad-e-besāyah ke zill-e-lawā kā sāth ho...
+  Sayyad-e-besāyah ke zill-e-lawā kā sāth ho...
 </p>
+
                 <div className="ourmissions-grid">
                     {missions.map((mission, index) => (
                         <div 
