@@ -1,11 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import VolunteerCard from "./VolunteerCard";
-import profile1 from "../Assets/profile-1.png";
-import profile2 from "../Assets/profile-2.png";
-import profile3 from "../Assets/profile-3.png";
-import profile4 from "../Assets/profile-4.png";
-import profile6 from "../Assets/profile-6.png";
 import asmuddin from "../Assets/members_img/asmuddin.png";
 import guddu from "../Assets/members_img/guddu.png";
 import alam from "../Assets/members_img/alam.png";
@@ -38,11 +33,6 @@ function Volunteer() {
     { img: amin, name: "Amin Ansari", title: "Member", stars: "", reviews: "" },
     { img: sabir, name: "Sabir Ansari", title: "Member", stars: "", reviews: "" },
     { img: tauhid, name: "Tauhid Khalifa", title: "Member", stars: "", reviews: "" },
-    { img: profile1, name: "Mr. Kaushar Alam", title: "Volunteer", stars: "1.2", reviews: "11" },
-    { img: profile2, name: "Er. Shahid Raza", title: "Volunteer", stars: "4.8", reviews: "0" },
-    { img: profile3, name: "Mr. Shahzad Alam", title: "Volunteer", stars: "4.7", reviews: "0" },
-    { img: profile4, name: "Er. Dularay Khan", title: "Volunteer", stars: "1.1", reviews: "7" },
-    { img: profile6, name: "Mr. Jamshed Alam", title: "Volunteer", stars: "4.8", reviews: "0" },
   ];
 
  
@@ -53,7 +43,7 @@ function Volunteer() {
 
   return (
     <div className="member-section" id="members">
-        <h1 className="legal-siteTitle">
+        <h1 className="siteTitle-logo">
         <Link to="/">
           <img src={logo} alt="Jashneraza Logo" />
         </Link>

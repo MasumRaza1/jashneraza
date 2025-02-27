@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/Donate.css";
-import qrCode from "../Assets/qrcode_www.codewithfaraz.com.png"; // Ensure the path is correct
+import qrCode from "../Assets/qrwhite.png"; // Ensure the path is correct
 
 function Donate() {
   return (
