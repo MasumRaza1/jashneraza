@@ -1,0 +1,73 @@
+/* General Container */
+.ourworks-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+/* Title & Description */
+.ourworks-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.ourworks-description {
+    font-size: 1.125rem;
+    font-family: 'Rubik', sans-serif;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    line-height: 1.75;
+}
+
+/* Works Grid */
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Work Card */
+.work-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Work Image & Video */
+.work-image,
+.work-video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+/* Work Title */
+.work-title {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Work Description */
+.work-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
