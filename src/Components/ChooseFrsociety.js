@@ -48,7 +48,7 @@ function ChooseFrsociety() {
 </p>
 
         <button
-          className="text-appointment-btn"
+          className="text-donate-btn"
           type="button"
           onClick={handleChooseFrsocietyClick}
         >

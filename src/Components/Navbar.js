@@ -19,7 +19,7 @@ function Navbar() {
   };
 
 
-  const handleChatBtnClick = () => {
+  const handleDonateBtnClick = () => {
     if (!isButtonDisabled) {
       toast.info("Experiencing high traffic, Please wait a moment.", {
         position: toast.POSITION.TOP_CENTER,
@@ -77,7 +77,7 @@ function Navbar() {
         className="navbar-btn"
         type="button"
         disabled={isButtonDisabled}
-        onClick={handleChatBtnClick}
+        onClick={handleDonateBtnClick}
       >
         <FontAwesomeIcon icon={faHeart} /> Donate
       </button>
@@ -127,13 +127,13 @@ function Navbar() {
         </ul>
 
         <button
-          className="navbar-btn mobile-navbar-btn" // Add a specific class for mobile button
-          type="button"
-          disabled={isButtonDisabled}
-          onClick={handleChatBtnClick}
-        >
-          <FontAwesomeIcon icon={faHeart} /> Donate
-        </button>
+      className="navbar-btn"
+      type="button"
+      disabled={isButtonDisabled}
+      onClick={handleDonateBtnClick}
+    >
+      <FontAwesomeIcon icon={faHeart} /> Donate
+    </button>
         
       </div>
 
