@@ -116,6 +116,7 @@ import "../Styles/ourWorks2tem.css";
  // Assuming this still applies to your styles
 
 const worksData = [
+  { image: "/works_img/work1.jpg", title: "Faizan-e-Raza Celebration", description: "Faizan-e-Raza's annual event celebrating achievements and unity under FR Society." },
   { image: "/works_img/work6.jpg", title: "Notable Guests Attended", description: "Various personalities joined FR Society’s COVID-19 relief efforts." },
   { video: "/works_img/video.mp4", title: "Glimpses of Helping", description: "FR Society provided crucial aid to migrants during COVID-19." },
   { image: "/works_img/work5.jpg", title: "Relief for Migrant Laborers", description: "FR Society provided crucial aid to migrants during COVID-19." },

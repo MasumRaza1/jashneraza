@@ -1,16 +1,18 @@
-/* Doctor Section */
+/* member Section */
 body{
 	 background: #F8F8F8;
 }
-.doctor-section {
+.member-section {
     padding: 48px 5%;
-    margin-bottom: 48px;
     text-align: center;
     background: #F8F8F8;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
-
+.legal-siteTitle{
+    background: #F8F8F8;
+    margin-top: -30px;
+}
 /* Title Content */
 .dt-title-content {
     margin-bottom: 64px;
@@ -55,7 +57,7 @@ body{
     opacity: 0.9;
 }
 
-/* Doctor Cards */
+/* member Cards */
 .dt-cards-content {
     width: 100%;
     display: flex;
@@ -138,7 +140,7 @@ body{
 }
 
 @media screen and (max-width: 480px) {
-    .doctor-section {
+    .member-section {
         padding: 32px;
     }
     .dt-title {
@@ -176,4 +178,12 @@ body{
 
 .download-btn:active {
     transform: scale(0.95);
+}
+
+.footer-legal p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    padding-top: 30px;
+    padding-bottom: 0;
+    color: #222;
 }

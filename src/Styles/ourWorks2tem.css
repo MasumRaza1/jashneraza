@@ -8,20 +8,46 @@
 
 /* Title & Description */
 .ourworks-title {
-    font-size: 2.5rem;
-    font-weight: 700;
     font-family: 'Poppins', sans-serif;
-    color: #1a1a1a;
-    margin-bottom: 0.5rem;
+    font-size: 42px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.ourworks-title > span {
+    position: relative;
+    display: inline-block;
+}
+.ourworks-title span::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 4px;
+    background-color: #795484;
+    border-radius: 8px;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.ourworks-title:hover span::before {
+    width: 100%;
 }
 
 .ourworks-description {
-    font-size: 1.125rem;
-    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
     color: #555;
-    max-width: 700px;
-    margin: 0 auto 2rem;
-    line-height: 1.75;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px !important;
 }
 
 /* Works Grid */
