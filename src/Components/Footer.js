@@ -63,15 +63,12 @@ function Footer() {
           <p className="ft-list-title">Contact Us</p>
           <ul className="ft-list-items">
             <li>
-              <a href="mailto:support@healthplus.com">support@frsociety.in</a>
-            </li>
-            <li>
               <a href="mailto:frsociety786@gmail.com">
               frsociety786@gmail.com
               </a>
             </li>
             <li>
-              <a href="tel:+022 5454 5252">+91 9006978778</a>
+              <a href="tel:9006978778">+91 9006978778</a>
             </li>
             <li>
             <a href="#">
