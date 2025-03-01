@@ -12,7 +12,7 @@ import sabir from "../Assets/members_img/sabir-removebg-preview.png";
 import tauhid from "../Assets/members_img/tauhid_Khalifa-removebg-preview.png";
 import yawar from "../Assets/members_img/yawar-removebg-preview.png";
 import najmuddin from "../Assets/members_img/najmuddin.png";
-import logo from "../Assets/FR Society (250 x 75 px) (1).svg";
+import logo from "../Assets/logo/1.svg";
 
 
 

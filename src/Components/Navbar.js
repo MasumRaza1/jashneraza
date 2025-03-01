@@ -8,7 +8,7 @@ import {
 import "../Styles/Navbar.css";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import logo from "../Assets/FR Society (250 x 75 px) (1).svg";
+import logo from "../Assets/logo/1.svg";
 
 function Navbar() {
   const [nav, setNav] = useState(false);

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../Styles/VolunteerForm.css";
-import logo from "../Assets/FR Society (250 x 75 px) (1).svg";
+import logo from "../Assets/logo/1.svg";
 
 function VolunteerForm() {
   const currentYear = new Date().getFullYear();

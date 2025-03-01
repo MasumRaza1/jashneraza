@@ -4,7 +4,7 @@ import SubscribeNewsletter from "./SubscribeNewsletter";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-// import logo from "../Assets/footerLogo.svg";
+import footerLogo from "../Assets/logo/2.svg";
 function Footer() {
   const currentYear = new Date().getFullYear();
   return (
@@ -13,8 +13,7 @@ function Footer() {
         <div className="ft-info">
           <div className="ft-info-p1">
             <p className="ft-title">
-            {/* <img src={logo} alt="Jashneraza Logo" /> */}
-            FR Society
+            <img src={footerLogo} alt="FR Society Logo" />
             </p>
             <p className="ft-description">
             FR Society, a non-profit in Rehla, Jharkhand, is dedicated to uplifting underprivileged communities.
