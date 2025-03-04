@@ -1,7 +1,8 @@
-/* member Section */
-body{
-	 background: #F8F8F8;
+/* General Styles */
+body {
+    background: #F8F8F8;
 }
+
 .member-section {
     padding: 48px 5%;
     text-align: center;
@@ -9,15 +10,13 @@ body{
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
-.siteTitle-logo{
+
+.siteTitle-logo {
     background: #F8F8F8;
     margin-top: -30px;
 }
-/* Title Content */
-.dt-title-content {
-    margin-bottom: 64px;
-}
 
+/* Title Content */
 .dt-title {
     font-family: 'Poppins', sans-serif;
     font-size: 42px;
@@ -57,21 +56,20 @@ body{
     opacity: 0.9;
 }
 
-/* member Cards */
+/* Member Cards Container */
 .dt-cards-content {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 24px;
     justify-content: center;
-    align-items: stretch;
-    gap: 32px;
-    margin-top: 32px;
+    align-items: center;
+    margin-top: 20px;
 }
 
 /* Individual Card */
 .dt-card {
-    width: 340px;
-    height: 420px;
+    width: 240px;
+    height: 320px;
     padding: 16px;
     background: white;
     border-radius: 16px;
@@ -89,7 +87,7 @@ body{
 /* Card Image */
 .dt-card-img {
     width: 100%;
-    height: 275px;
+    height: 200px;
     background-color: #DDE5F8;
     border-radius: 16px;
     background-position: center;
@@ -99,7 +97,7 @@ body{
 /* Card Text */
 .dt-card-name {
     margin-top: 12px;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.7px;
     color: #222;
@@ -109,27 +107,12 @@ body{
     margin: 6px 0 8px;
     color: #555;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 0.6px;
     font-weight: 500;
 }
 
-/* Stars & Reviews */
-.dt-card-stars {
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 0.6px;
-    color: #ff9800;
-}
-
-.dt-card-reviews {
-    color: #5a5a5a;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 0.6px;
-}
-
-/* Responsive */
+/* Responsive: On Mobile, Ensure First Card is Full Width and Last Two Are Side by Side */
 @media screen and (max-width: 768px) {
     .dt-title {
         font-size: 34px;
@@ -139,51 +122,48 @@ body{
     }
 }
 
+/* Mobile View (≤ 480px) */
 @media screen and (max-width: 480px) {
     .member-section {
         padding: 32px;
     }
+
     .dt-title {
         font-size: 30px;
     }
+
     .dt-description {
         font-size: 16px;
     }
-    .dt-card {
+
+    .dt-cards-content {
+        display: grid;
+        grid-template-columns: 1fr; /* Default: One column */
+        gap: 16px;
+    }
+
+    .member-card-container:first-child {
+        grid-column: 1 / -1; /* First card spans full width */
+    }
+
+    /* Ensure the last two cards (Secretary & Treasurer) are in one row */
+    .member-card-container:nth-child(2),
+    .member-card-container:nth-child(3) {
         width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dt-cards-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns for last two cards */
+        gap: 16px;
+    }
+
+    .dt-card {
+        width: 100%; /* Responsive card width */
     }
 }
-.download-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    background: linear-gradient(135deg, #795484, #5A3C66);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 5px 15px rgba(121, 84, 132, 0.3);
-}
 
-.download-btn:hover {
-    background: linear-gradient(135deg, #5A3C66, #3E2847);
-    box-shadow: 0 8px 20px rgba(90, 60, 102, 0.4);
-    transform: translateY(-2px);
-}
 
-.download-btn:active {
-    transform: scale(0.95);
-}
 
-.footer-legal p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    padding-top: 30px;
-    padding-bottom: 0;
-    color: #222;
-}

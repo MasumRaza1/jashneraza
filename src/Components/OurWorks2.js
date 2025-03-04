@@ -110,10 +110,11 @@
 
 // export default Works;
 
-import React from "react";
+// import React from "react";
 // import "../Styles/ourWorks2.css";
-import "../Styles/ourWorks2tem.css"; 
- // Assuming this still applies to your styles
+import React, { useState } from "react";
+import Modal from "react-modal";
+import "../Styles/ourWorks2tem.css";
 
 const worksData = [
   { image: "/works_img/work1.jpg", title: "Faizan-e-Raza Celebration", description: "Faizan-e-Raza's annual event celebrating achievements and unity under FR Society." },
@@ -125,24 +126,38 @@ const worksData = [
   { image: "/works_img/fr_news.png", title: "Featured in Newspaper", description: "FR Society Featured in Newspaper" },
 ];
 
+Modal.setAppElement("#root");
+
 function Works() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const openModal = (index) => {
+    setCurrentIndex(index);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
+  const goToPrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? worksData.length - 1 : prevIndex - 1));
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === worksData.length - 1 ? 0 : prevIndex + 1));
+  };
+
   return (
     <div className="ourworks-container">
       <h2 className="ourworks-title"><span>Our Works</span></h2>
       <p className="ourworks-description">Here are some of our past projects and contributions towards the community.</p>
-
       <div className="works-grid">
         {worksData.map((work, index) => (
-          <div key={index} className="work-card">
+          <div key={index} className="work-card" onClick={() => openModal(index)}>
             {work.video ? (
-              <video 
-                className="work-video"
-                src={work.video}
-                autoPlay
-                loop
-                muted
-                playsInline
-              />
+              <video className="work-video" src={work.video} autoPlay loop muted playsInline />
             ) : (
               <img className="work-image" src={work.image} alt={work.title} />
             )}
@@ -151,6 +166,18 @@ function Works() {
           </div>
         ))}
       </div>
+      
+      {/* Modal for Larger View */}
+      <Modal isOpen={modalIsOpen} onRequestClose={closeModal} className="image-modal" overlayClassName="overlay">
+        <button className="close-btn" onClick={closeModal}>✖</button>
+        <button className="modal-arrow modal-prev" onClick={goToPrev}>‹</button>
+        {worksData[currentIndex]?.video ? (
+          <video className="modal-video" src={worksData[currentIndex].video} controls autoPlay />
+        ) : (
+          <img className="modal-image" src={worksData[currentIndex]?.image} alt={worksData[currentIndex]?.title} />
+        )}
+        <button className="modal-arrow modal-next" onClick={goToNext}>›</button>
+      </Modal>
     </div>
   );
 }

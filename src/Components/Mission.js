@@ -6,11 +6,12 @@ import shifaeraza from "../Assets/branches_logo/shifaeraza.svg";
 import kalameraza from "../Assets/branches_logo/kalameraza.svg";
 import faizaneraza from "../Assets/branches_logo/faizaneraza.svg";
 
+
 const Ourmissions = () => {
     const missions = [
         {
             title: "Faizan-e-Raza",
-            description: "Providing Quranic learning and Islamic education for all age groups.",
+            description: "Providing education, skill development, and knowledge resources.",
             icon: <FaGraduationCap />,
             bgColor: "#fff",
             textColor: "#333",

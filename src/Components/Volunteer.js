@@ -3,15 +3,7 @@ import { Link } from "react-router-dom";
 import VolunteerCard from "./VolunteerCard";
 import asmuddin from "../Assets/members_img/asmuddin.png";
 import guddu from "../Assets/members_img/guddu.png";
-import alam from "../Assets/members_img/alam.png";
-import amin from "../Assets/members_img/amin.png";
-import bablu from "../Assets/members_img/bablu-removebg-preview.png";
-import islamuddin from "../Assets/members_img/islamuddin-removebg-preview.png";
-import kalim from "../Assets/members_img/kalim-removebg-preview.png";
-import sabir from "../Assets/members_img/sabir-removebg-preview.png";
-import tauhid from "../Assets/members_img/tauhid_Khalifa-removebg-preview.png";
 import yawar from "../Assets/members_img/yawar-removebg-preview.png";
-import najmuddin from "../Assets/members_img/najmuddin.png";
 import logo from "../Assets/logo/1.svg";
 
 
@@ -23,14 +15,7 @@ function Volunteer() {
     { img: asmuddin, name: "Asmuddin Ansari", title: "President", stars: "", reviews: "" },
     { img: yawar, name: "Yawar Hussain", title: "Secretary", stars: "", reviews: "" },
     { img: guddu, name: "Gulam Akhtar", title: "Treasurer", stars: "", reviews: "" },
-    { img: najmuddin, name: "Najmuddin Noori", title: "Member", stars: "", reviews: "" },
-    { img: bablu, name: "Manjur Alam", title: "Member", stars: "", reviews: "" },
-    { img: kalim, name: "Kalimuddin Ansari", title: "Member", stars: "", reviews: "" },
-    { img: islamuddin, name: "Islamuddin Ansari", title: "Member", stars: "", reviews: "" },
-    { img: alam, name: "Md. Alam Ansari", title: "Member", stars: "", reviews: "" },
-    { img: amin, name: "Amin Ansari", title: "Member", stars: "", reviews: "" },
-    { img: sabir, name: "Sabir Ansari", title: "Member", stars: "", reviews: "" },
-    { img: tauhid, name: "Tauhid Khalifa", title: "Member", stars: "", reviews: "" },
+    
   ];
 
  
@@ -64,9 +49,7 @@ function Volunteer() {
         ))}
       </div>
 
-      <div className="footer-legal">
-        <p>© 2021-{currentYear} FR Society. All rights reserved.</p>
-      </div>
+   
     </div>
   );
 }

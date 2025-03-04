@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/LegalDocs.css";
-import logo from "../Assets/FR Society (250 x 75 px) (1).svg";
+import logo from "../Assets/logo/1.svg";
 function LegalDocs() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
